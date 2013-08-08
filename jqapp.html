@@ -5,17 +5,28 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     </head>
     <body>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="script2.js"></script>
 	<center><h1>Binary converter</h1></center>
 
-	<form style="margin: 0; padding: 0">
-	    <p> Binary -- 
+	<form style="margin: 0; padding: 0" data-bind="submit: AddDepartment " class="form-inline">
+	    <button class="btn">convert</button> 
 	    <input type="text" value="None" size=20 name="bininput" style="display:inline;"/>
-	    <button style="display:inline;">convert</button>
-	    </p>
-	</form>
-	<p>enter a value and press enter</p>
-	<div id="result">result: </div>
+	</form><br>
+	<table class="table table-bordered" style="width: 300px;">
+	    <tr>
+		<th>Binary</th>
+		<th>Decimal</th>
+	    </tr>
+	    <tr>
+		<td>
+		    100101
+		</td>
+		<td>
+		    37
+		</td>
+	    </tr>
+	</table>
     </body>
 </html>

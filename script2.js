@@ -8,8 +8,7 @@ $(document).ready(function(){
 	}
 	res = res + "";
 	console.log(res);
-	//alert(res);
-	$('#result').text("result: " + res);
+	$('table').append("<tr><td>"+toConvert+"</td><td>"+res+"</td></tr>");
     });
 });
 
